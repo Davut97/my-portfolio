@@ -1,0 +1,24 @@
+.half-black-half-white {
+    background: black;
+    text-align: center;
+}
+
+.header {
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    font-size: 60px;
+    color: white;
+    font-family: AvenirRoman;
+}
+.header-bar {
+    margin: auto;
+    text-align: center;
+    background: #444649;
+    height: 4px;
+    width: 150px;
+}
+.strongy {
+    color: #fcc203;
+}

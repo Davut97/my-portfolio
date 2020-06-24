@@ -1,0 +1,18 @@
+.Name {
+    font-family: 'Valencia';
+    font-size: 100px;
+    text-align: center;
+    line-height: normal;
+}
+.Job {
+    font-size: 28px;
+    font-family: 'AvenirRoman';
+    text-align: center;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0, 0.1, 0.12, 0.99);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}

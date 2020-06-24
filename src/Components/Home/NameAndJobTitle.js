@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import NameReveal from './NameReveal';
 import TitleReveal from './TitleReveal';
+import FadeIn from 'react-animations/lib/fade-in-up';
 
 const Container = styled.div`
     display: flex;
@@ -16,19 +17,17 @@ const Container = styled.div`
 
 class NameAndJobTitle extends Component {
     render() {
+        const FadeInAnimation = keyframes`${FadeIn}`;
+        const FadeInDiv = styled.div`
+            animation: 2s ${FadeInAnimation};
+        `;
         return (
             <Container>
-                <NameReveal
-                    text="Aydin Davutoglu"
-                    fontFam="Valencia"
-                    timeDelay={500}
-                />
-                <br />
-                <TitleReveal
-                    text="Front-end Developer"
-                    fontFam="AvenirRoman"
-                    timeDelay={1300}
-                />
+                <FadeInDiv>
+                    <NameReveal text="Aydin Davutoglu" />
+                    <br />
+                    <TitleReveal text="Front-end Developer" />
+                </FadeInDiv>
             </Container>
         );
     }

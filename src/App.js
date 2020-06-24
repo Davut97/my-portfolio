@@ -1,20 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Link, Router, BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import NavigationBar from './Components/Navbar/Navbar';
 import './App.css';
-import { Navbar, Nav, Form, Button, FormControl, Row } from 'react-bootstrap';
 import Main from './Components/Home/main';
+import About from './Components/About/About';
 function App() {
     return (
-        <React.Fragment>
+        <>
             <NavigationBar />
-            <BrowserRouter>
-                <Switch>
-                    <Route to="/" component={Main}></Route>
-                </Switch>
-            </BrowserRouter>
-        </React.Fragment>
+            <Main title="Section 1" dark={true} id="section1" />
+            <About title="Section 2" dark={false} id="about" />
+        </>
     );
 }
 
