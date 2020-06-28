@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
-import { Link as LinkScroll } from 'react-scroll';
-import { Link, Route, withRouter } from 'react-router-dom';
+import { Route, withRouter } from 'react-router-dom';
+import { GiPawprint } from 'react-icons/gi';
 import TerminalLinks from './TerminalLinks';
 import HomeLinks from './HomeLinks';
-import { GiPawprint } from 'react-icons/gi';
 
 const Styles = styled.div`
   .navbar {

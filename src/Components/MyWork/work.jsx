@@ -1,10 +1,11 @@
 import React from 'react';
-import { Media, Image, Col } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 import './style.css';
+
 const work = (props) => {
-  const { title, imageUrl, projectDescription, projectUrl } = props.workDetail;
-  console.log(title, imageUrl, projectDescription, projectUrl);
+  const { imageUrl } = props.workDetail;
   return (
+    // eslint-disable-next-line react/jsx-filename-extension
     <>
       <Image src={imageUrl} thumbnail fluid />
     </>

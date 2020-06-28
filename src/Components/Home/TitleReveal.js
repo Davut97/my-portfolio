@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
-import styled, { keyframes } from 'styled-components';
-import PropTypes from 'prop-types';
-import device from '../../Assets/Responsive/breakpoint';
+import React from 'react';
+
 import './NameStyle.css';
-const TitleReveal = ({ text }) => {
-    return (
-        <>
-            <p className="Job">{text}</p>
-        </>
-    );
-};
+
+// eslint-disable-next-line react/prop-types
+const TitleReveal = ({ text }) => (
+  // eslint-disable-next-line react/jsx-filename-extension
+  <>
+    <p className="Job">{text}</p>
+  </>
+);
 
 export default TitleReveal;

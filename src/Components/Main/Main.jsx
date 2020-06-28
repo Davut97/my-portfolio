@@ -1,6 +1,7 @@
 import React from 'react';
 
-import HomeMain from '../Home/main';
+// eslint-disable-next-line import/extensions
+import HomeMain from '../Home/main.jsx';
 import About from '../About/About';
 // eslint-disable-next-line import/extensions
 import MyWork from '../MyWork/myWork.jsx';

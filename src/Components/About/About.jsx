@@ -11,10 +11,12 @@ import { AnimatedOnScroll } from 'react-animated-css-onscroll';
 
 const About = () => {
   const FadeInLeftAnimation = keyframes`${FadeInLeft}`;
+  // eslint-disable-next-line no-unused-vars
   const FadeInLeftDiv = styled.div`
     animation: 2s ${FadeInLeftAnimation};
   `;
   const FadeInRightAnimation = keyframes`${FadeInRight}`;
+  // eslint-disable-next-line no-unused-vars
   const FadeInRightDiv = styled.div`
     animation: 2s ${FadeInRightAnimation};
   `;
