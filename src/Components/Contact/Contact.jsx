@@ -20,8 +20,9 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          alert('Thank you, Your messeage have been sent');
-          document.forms['myForm'].reset();
+          // eslint-disable-next-line no-alert
+          alert('Thank you, Your message have been sent');
+          document.forms.myForm.reset();
         },
         (error) => {
           console.log(error.text);
@@ -48,7 +49,6 @@ const Contact = () => {
           className="formContainer"
           onSubmit={(e) => {
             handelSendEMail(e);
-            console.log(e.target);
           }}
           name="myForm"
         >

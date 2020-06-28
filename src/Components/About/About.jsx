@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../Assets/style/style.css';
 import './style.css';
 import { Image } from 'react-bootstrap';
 import Typed from 'react-typed';
@@ -48,15 +47,16 @@ const About = () => {
               I'm a Front-End Developer Living In Istanbul, Turkey.
               <br />
               I have serious passion for UI effects and animations.
-              <br />I love to Create{' '}
+              <br />I love to Create {''}
               <Typed
                 className="strongy"
                 strings={['Fast', 'Responsive', 'Dynamic']}
                 typeSpeed={50}
                 backSpeed={50}
                 loop
-              />{' '}
-              <br /> Websites With Great User experiences.
+              />
+              <br />
+              Websites With Great User experiences.
             </p>
           </AnimatedOnScroll>
         </div>
