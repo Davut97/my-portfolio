@@ -13,7 +13,7 @@ function App() {
       <NavigationBar />
       <Switch>
         <Route exact path="/my-portfolio" component={Main} />
-        <Route path="/portfolio/terminal" component={Terminal} />
+        <Route path="/my-portfolio/terminal" component={Terminal} />
       </Switch>
     </BrowserRouter>
   );
