@@ -39,12 +39,12 @@ const Styles = styled.div`
 
 const NavigationBar = (props) => {
   const links =
-    props.location.pathname === '/portfolio' ? <HomeLinks /> : <TerminalLinks />;
+    props.location.pathname === '/my-portfolio' ? <HomeLinks /> : <TerminalLinks />;
   return (
     <Route>
       <Styles>
         <Navbar expand="lg">
-          <Navbar.Brand href="/portfolio">
+          <Navbar.Brand href="/my-portfolio">
             <GiPawprint />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
