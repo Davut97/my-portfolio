@@ -12,8 +12,8 @@ function App() {
     <BrowserRouter>
       <NavigationBar />
       <Switch>
-        <Route exact path="/" component={Main} />
-        <Route path="/terminal" component={Terminal} />
+        <Route exact path="/portfolio" component={Main} />
+        <Route path="/portfolio/terminal" component={Terminal} />
       </Switch>
     </BrowserRouter>
   );
