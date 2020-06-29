@@ -7,7 +7,7 @@ const homeLinks = () => (
   <>
     <Nav.Item>
       <Nav.Link>
-        <Link to="/my-portfolio">Home</Link>
+        <Link to="/my-portfolio/">Home</Link>
       </Nav.Link>
     </Nav.Item>
     <Nav.Item>
