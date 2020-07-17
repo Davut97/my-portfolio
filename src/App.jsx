@@ -12,8 +12,8 @@ function App() {
     <HashRouter>
       <NavigationBar />
       <Switch>
-        <Route exact path="/my-portfolio/" component={Main} />
-        <Route path="/my-portfolio/terminal" component={Terminal} />
+        <Route exact path="/" component={Main} />
+        <Route path="/terminal" component={Terminal} />
       </Switch>
     </HashRouter>
   );
