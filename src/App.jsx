@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 
 // eslint-disable-next-line import/extensions
 import NavigationBar from './Components/Navbar/Navbar.jsx';
@@ -9,13 +9,13 @@ import Terminal from './Components/terminal/myTerminal';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <NavigationBar />
       <Switch>
         <Route exact path="/my-portfolio/" component={Main} />
         <Route path="/my-portfolio/terminal" component={Terminal} />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
