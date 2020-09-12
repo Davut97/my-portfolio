@@ -39,8 +39,8 @@ const MyTerminal = () => {
       <Terminal
         commands={commands}
         style={{ width: '100%', minHeight: '900px' }}
-        welcomeMessage="Hi. Make yourself at home. Don't hesitate to ask for help if you need it!"
-        promptLabel="me@BadPanda:~$"
+        welcomeMessage="Hi. Make yourself at home. Don't hesitate to ask for `help` if you need it!"
+        promptLabel="me@Aydin:~$"
       />
     </div>
   );

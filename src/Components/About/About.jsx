@@ -44,10 +44,10 @@ const About = () => {
               Who's this guy?
             </h6>
             <p style={{ lineHeight: '27px' }}>
-              I'm a Front-End Developer Living In Istanbul, Turkey.
+              I'm a Full Stack Developer living In Istanbul, Turkey.
               <br />
               I have serious passion for UI effects and animations.
-              <br />I love to Create {''}
+              <br />I love to create {''}
               <Typed
                 className="strongy"
                 strings={['Fast', 'Responsive', 'Dynamic']}
@@ -56,7 +56,7 @@ const About = () => {
                 loop
               />
               <br />
-              Websites With Great User experiences.
+              websites with great user experiences.
             </p>
           </AnimatedOnScroll>
         </div>

@@ -1,10 +1,11 @@
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
 import { Route, withRouter } from 'react-router-dom';
-import { GiPawprint } from 'react-icons/gi';
 import TerminalLinks from './TerminalLinks';
 import HomeLinks from './HomeLinks';
+import Logo from '../../Assets/img/letter-a.png';
 
 const Styles = styled.div`
   .navbar {
@@ -13,11 +14,9 @@ const Styles = styled.div`
   a,
   .navbar-nav .nav-link {
     color: black;
-    text-decoration-color: red;
+    text-decoration: none;
 
     &:hover {
-      text-decoration-line: line-through;
-      text-decoration-color: red;
       transition: $animate;
       position: relative;
       &:before,
@@ -38,18 +37,18 @@ const Styles = styled.div`
 `;
 
 const NavigationBar = (props) => {
+  // eslint-disable-next-line operator-linebreak
   const links =
-    props.location.pathname === '/my-portfolio/' ? (
-      <HomeLinks />
-    ) : (
-      <TerminalLinks />
-    );
+    // eslint-disable-next-line react/prop-types
+    // eslint-disable-next-line react/destructuring-assignment
+    // eslint-disable-next-line react/prop-types
+    props.location.pathname === '/' ? <HomeLinks /> : <TerminalLinks />;
   return (
     <Route>
       <Styles>
         <Navbar expand="lg">
-          <Navbar.Brand href="/my-portfolio/">
-            <GiPawprint />
+          <Navbar.Brand>
+            <img src={Logo} alt="LOGO" style={{ width: '30px' }} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

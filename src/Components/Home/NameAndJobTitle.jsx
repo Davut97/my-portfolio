@@ -29,7 +29,7 @@ class NameAndJobTitle extends Component {
         <FadeInDiv>
           <NameReveal text="Aydin Davutoglu" />
           <br />
-          <TitleReveal text="Front-end Developer" />
+          <TitleReveal text="Full Stack Developer" />
         </FadeInDiv>
       </Container>
     );
